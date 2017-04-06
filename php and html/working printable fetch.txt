@@ -1,0 +1,7 @@
+
+ $stmt = $dbAssetManTest->query('select * from tblAssetDesc');
+     while ($row = $stmt->fetch())
+         {
+         echo nl2br ($row['name'] ." ". $row['descID']  . "\n");
+
+         }
