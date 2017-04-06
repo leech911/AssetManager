@@ -1,0 +1,73 @@
+------------------------------------------------------------------------------------
+
+constraint fk_tblIn_descID
+	foreign key (descID)
+	references tblAssetDesc(descID)
+	on update cascade
+	on delete set null
+
+------------------------------------------------------------------------------------
+
+constraint fk_tblIn_userIn
+	foreign key (userIn)
+	references tblUsers(employeeNumber)
+	on update cascade
+	on delete set null
+
+------------------------------------------------------------------------------------
+
+constraint fk_tblOnHand_descID
+	foreign key (descID)
+	references tblAssetDesc(descID)
+	on update cascade
+	on delete set null 
+
+------------------------------------------------------------------------------------
+
+constraint fk_tblTaggedAssets_descID
+	foreign key (descID)
+	references tblAssetDesc(descID)
+	on update cascade
+	on delete set null
+
+------------------------------------------------------------------------------------
+
+constraint fk_tblTransfer_gesaTag
+	foreign key (gesaTag)
+	references tblTaggedAssets (gesaTag)
+	on update cascade
+	on delete set null
+
+------------------------------------------------------------------------------------
+
+constraint fk_tblTransfer_requestUser
+	foreign key (requestUser)
+	references tblUsers (employeeNumber)
+	on update cascade
+	on delete set null
+
+------------------------------------------------------------------------------------
+
+constraint fk_tblTransfer_approvedBy
+	foreign key (approvedBy)
+	references tblUsers(employeeNumber)
+	on delete set null
+	on update cascade
+
+------------------------------------------------------------------------------------
+
+constraint fk_tblDisposal_requestUser
+	foreign key (requestUSer)
+	references tblUsers(employeeNumber)
+	on update cascade
+	on delete set Null
+
+------------------------------------------------------------------------------------
+
+constraint fk_tblDisposal_approvedBy
+	foreign key (approvedBy)
+	references tblUsers (employeeNumber)
+	on update cascade
+	on delete set null
+
+------------------------------------------------------------------------------------
