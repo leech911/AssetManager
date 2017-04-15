@@ -1,0 +1,70 @@
+************************************************************************************
+conceptualize:
+trigger - tblOnHand.qty
+
+when data is inserted in tblIn.qty or tblOut.qty the signed int tblOnHand.qty should update accodingly
+
+************************************************************************************
+
+************************************************************************************
+
+conceptualize:
+trigger - update tblOnHand.lastModified 
+
+when data is inserted into tblOut or tblIn tblOnHand.lastModifiedOn should update accodingly
+
+************************************************************************************
+
+conceptualize:
+trigger - update tblTaggedAssets.location
+
+when an item transfer is made a new entry should be made in the tblTransfer table. Upon a new entry being made in tblTransfer the location in tblTaggesAssets shold be updated. 
+
+************************************************************************************
+------------------------------------------------------------------------------------
+
+create trigger trg_tblTransferUpdateTagged
+after insert
+on tblTransfer for each row
+update tblTaggeAssets
+set tblTaggedAssets.location = tblTransfer.location
+where tblTaggedAssets.gesaTag = tblTransfer.gesaTag;
+
+------------------------------------------------------------------------------------
+
+delimiter $$
+
+create trigger trg_tblInUpdateOnHand
+after insert 
+on tblIn for each row
+begin
+update tblOnHand
+set tblOnHand.qty = tblOnHand.qty + tblIn.qty
+where tblOnHand.descID = tblIn.descID;
+
+update tblOnHand
+set tblOnHand.lastModifiedOn = tblIn.dateModified
+where tblOnHand.descID = tblIn.descID;
+end$$
+delimiter ;
+
+------------------------------------------------------------------------------------
+
+delimiter $$
+
+create trigger trg_tblOutUpdateOnHand
+after insert
+on tblOut for each row
+begin
+update tblOnHand
+set tblOnHand.lastModifedOn = tblOut.dateModified
+where tblOnHand.descID = tblOut.descID;
+
+update tblOnHand
+set tblOnHand.qty = tblOnHand.qty + tblIn.qty
+where tblOnHand.descID = tblIn.descID;
+end$$
+delimiter ;
+
+------------------------------------------------------------------------------------
+
