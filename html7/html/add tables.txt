@@ -1,0 +1,179 @@
+------------------------------------------------------------------------------------
+
+drop table if exists tblStorageLocations;
+create table tblStorageLocations
+(
+	locationID int unsigned null auto_increment primary key,
+	rack int not null,
+	shelf int not null
+);
+
+------------------------------------------------------------------------------------
+
+drop table if exists tblAssetDesc;
+create table tblAssetDesc
+(
+	descID int unsigned NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	storeRmLocation int unsigned NULL,
+	name varchar(255) NOT NULL,
+	description varchar(255) NOT NULL,
+	taggable bool NOT NULL,
+	bookValue int NULL,
+	make varchar(255) NOT NULL,
+	model varchar (255) NOT NULL,
+	constraint fk_tblAssetDesc_locationID 
+	foreign key (storeRmLocation)
+	references tblStorageLocations(locationID)
+	on delete set NULL
+	on update cascade 
+);
+
+------------------------------------------------------------------------------------
+
+drop table if exists tblUsers;
+create table tblUsers
+(
+	employeeNumber varchar(255) not null primary key,
+	fName varchar(255),
+	lName varchar(255),
+	positionID varchar(255),
+	title varchar(255),
+	workEmail varchar(255)
+);
+
+------------------------------------------------------------------------------------
+
+drop table if exists tblOut; 
+create table tblOut
+(
+	keyOut int unsigned auto_increment not null primary key,
+	descID int unsigned null,
+	userOut varchar(255) null,
+	qty int signed not null,
+	dateModified timestamp default current_timestamp not null,
+	constraint fk_tblOut_descID
+	foreign key (descID)
+	references tblAssetDesc(descID)
+	on update cascade
+	on delete set NULL,
+	constraint fk_tblOut_userOut
+	foreign key (userOut)
+	references tblUsers(employeeNumber)
+	on update cascade
+	on delete set Null
+	
+);
+
+------------------------------------------------------------------------------------
+
+drop table if exists tblIn; 
+create table tblIn
+(
+	keyIn int unsigned auto_increment not null primary key,
+	descID int unsigned null,
+	userIn varchar(255) null,
+	qty int signed not null,
+	dateModified timestamp default current_timestamp not null,
+	constraint fk_tblIn_descID
+	foreign key (descID)
+	references tblAssetDesc(descID)
+	on update cascade
+	on delete set null,
+	constraint fk_tblIn_userIn
+	foreign key (userIn)
+	references tblUsers(employeeNumber)
+	on update cascade
+	on delete set null
+);
+
+------------------------------------------------------------------------------------
+
+drop table if exists tblOnHand; 
+create table tblOnHand
+(
+	itAssetID int unsigned auto_increment not null primary key,
+	descID int unsigned null,
+	qty int signed not null,
+	lastModified timestamp not null,
+	constraint fk_tblOnHand_descID
+	foreign key (descID)
+	references tblAssetDesc(descID)
+	on update cascade
+	on delete set null 
+);
+
+------------------------------------------------------------------------------------
+
+drop table if exists tblTaggedAssets; 
+create table tblTaggedAssets
+(
+	dateTagged timestamp default current_timestamp not null,
+	gesaTag int unsigned not null primary key,
+	serial varchar(255) null,
+	descID int unsigned null,
+	location varchar(255) default 'IT' not null,
+	accountAssetID varchar(255) null,	
+	po varchar(255) null,
+	constraint fk_tblTaggedAssets_descID
+	foreign key (descID)
+	references tblAssetDesc(descID)
+	on update cascade
+	on delete set null
+);
+
+------------------------------------------------------------------------------------
+
+drop table if exists tblTransfer; 
+create table tblTransfer
+(
+	transferID int unsigned not null primary key,
+	gesaTag int unsigned null,
+	requestUSer varchar(255) null,
+	approvedBy varchar(255) null,
+	transferReason varchar(255) not null,
+	department varchar(255) null,
+	transferDate timestamp null,
+	approvedDate timestamp null,
+	completeDate timestamp null,
+	location varchar (255) default 'IT' not null,
+	constraint fk_tblTransfer_gesaTag
+	foreign key (gesaTag)
+	references tblTaggedAssets (gesaTag)
+	on update cascade
+	on delete set null,
+	constraint fk_tblTransfer_requestUser
+	foreign key (requestUser)
+	references tblUsers (employeeNumber)
+	on update cascade
+	on delete set null,
+	constraint fk_tblTransfer_approvedBy
+	foreign key (approvedBy)
+	references tblUsers(employeeNumber)
+	on delete set null
+	on update cascade
+);
+
+------------------------------------------------------------------------------------
+
+drop table if exists tblDisposal; 
+create table tblDisposal
+(
+	gesaTag int unsigned not null primary key,
+	approvedBy varchar(255) null,
+	requestUser varchar(255) null,
+	disposalDate timestamp default current_timestamp not null,
+	disposalReason varchar(255) not null,
+	completeDate timestamp null,
+	constraint fk_tblDisposal_requestUser
+	foreign key (requestUSer)
+	references tblUsers(employeeNumber)
+	on update cascade
+	on delete set Null,
+	constraint fk_tblDisposal_approvedBy
+	foreign key (approvedBy)
+	references tblUsers (employeeNumber)
+	on update cascade
+	on delete set null
+);
+
+------------------------------------------------------------------------------------

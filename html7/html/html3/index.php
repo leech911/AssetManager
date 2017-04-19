@@ -1,0 +1,44 @@
+ <html>
+
+
+
+<?php
+require 'header.php'
+?>
+
+ <head>
+
+
+<script type='text/javascript' src='./js/materialize.min.js'> </script>
+<script type='text/javascript' src='./js/materialize.js'> </script>
+     <title>
+      Asset Manager 
+     </title>
+ </head>
+ <body>
+
+ <?php
+ include_once('navBar.php');
+ ?>
+<div class="container">
+<?php
+include_once('tblDesc.php');
+?>
+
+
+</div>
+    </body>
+  <script>
+
+  $('.button-collapse').sideNav({
+      menuWidth: 300, // Default is 300
+      edge: 'left', // Choose the horizontal origin
+      closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      draggable: true // Choose whether you can drag to open on touch screens
+    }
+  );
+
+  </script>
+
+
+
