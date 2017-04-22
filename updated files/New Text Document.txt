@@ -1,0 +1,18 @@
+DECLARE @r=1 int
+DECLARE @s=1 int
+
+while (@r<20)
+{
+
+	
+	while (@s<6){
+		INSERT INTO tblStorageLocations
+		values (@r,@a)
+		set @s=@s+1
+			IF (@s==6) {
+			set @s=1
+			}
+	}
+
+}
+;

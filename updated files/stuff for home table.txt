@@ -1,0 +1,8 @@
+name (tblAssetDesc)
+taggable (tblAssecDesc)
+make (tblAssetDesc)
+model (tblAssetDesc)
+location (turn location ID into shelf+rack)
+(query: select shelf, rack from tblStorageLocations join on tblAssetDesc.descID=tblBROnHand.descID)
+
+qty

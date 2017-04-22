@@ -1,0 +1,31 @@
+DELIMITER //
+CREATE FUNCTION locationUpdate() 
+BEGIN
+DECLARE @row INT;
+DECLARE @shelf INT;
+@row=1;
+@shelf=1;
+WHILE (@row<20)
+	INSERT INTO tblStorageLocations
+	values (@row,@shelf)
+	SET @shelf=@shelf+1
+		IF (@shelf==6, SET @shelf=1, 'Do Nothing');
+END; //
+DELIMITER ;
+
+
+
+
+
+DELIMITER //
+
+CREATE FUNCTION FortyTwo() RETURNS TINYINT DETERMINISTIC
+BEGIN
+ DECLARE x TINYINT;
+ SET x = 42;
+ RETURN x;
+END 
+
+//
+
+DELIMITER ;

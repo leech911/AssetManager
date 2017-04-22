@@ -1,0 +1,18 @@
+what does transfer button do?
+
+transfer lets user move tagged item from one location to another
+should link to table that has tagged asset listed
+both disposal and transfer need the same table to display known assets
+should use the same query for both tables, but; both tables will use seperate logic
+
+asset tag (tblTaggedAssets.gesaTag)
+name (tblASsetDesc.name)
+make (tblAssetDesc.make
+model (tblAssetDesc.model)
+last transfer date (tblTaggedAssets.lastModified)
+location name (tblLocations.locName)
+department (tblTaggedAssets.department) 
+
+tables: tblTaggedAssets
+	tblAssetDesc
+	tblLocations
