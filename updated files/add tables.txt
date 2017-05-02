@@ -233,22 +233,16 @@ create table tblDisposal
 ------------------------------------------------------------------------------------
 
 
-drop table if exists tblDispsosalApproved
-create table 
-tblDisposalApproved (
-                approveID int unsigned not null primary key,                 
-		gesaTag int unsigned not null,
-                approvedBy varchar(255) not null,
-                completeDate timestamp default current_timestamp not null,
-                constraint fk_tblDisposalApproved_approvedBy
-                foreign key (approvedBy)
-                references tblUsers(employeeNumber)
-                on update cascade,
-                constraint fk_tblDisposalApproved_gesaTag 
-                foreign key (gesaTag) 
-                references tlbDisposal(gesaTag) 
-                on update cascade           );
-
+drop table if exists tblDispsosalApproved;
+CREATE TABLE `tblDisposalApproved` (
+  `approveID` int(10) unsigned NOT NULL,
+  `gesaTag` int(10) unsigned NOT NULL,
+  `approvedBy` varchar(255) NOT NULL,
+  `completeDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`approveID`),
+  constraint `fk_tblDisposalApproved_approvedBy` foreign key (`approvedBy`) references tblUsers(employeeNumber),
+  constraint `fk_tblDisposalApproved_gesaTag` foreign key (`gesaTag`) references tblDisposal(gesaTag)
+) ;
 
 ------------------------------------------------------------------------------------
 
