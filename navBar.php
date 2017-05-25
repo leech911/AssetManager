@@ -68,9 +68,9 @@ require 'header.php';
 <ul id="slide-out" class="side-nav">
       <li><div class="userView">
         <div class="background">
-          <img src="../images/office.jpg">
+          <img src="./images/office.jpg">
         </div>
-        <a href="#!user"><img class="circle" src="../images/box.jpg"></a>
+        <a href="#!user"><img class="circle" src="./images/box.jpg"></a>
       </div></li>
         <h5>  Asset Manager</h5>
         <li><div class="divider"></div></li>
@@ -78,8 +78,12 @@ require 'header.php';
       <li><a class="waves-effect" href="reports.php">Reports</a></li>
       <li><div a class="divider"></div></li>
      <li><a id="btnTag" class="waves-effect waves-light" href="#modalReports">Tag Assets</a></li>
-     <li><a id="btnTransfer" class="waves-effect waves-light" href="#modalReports">Transfer Assets</a></li>
-     <li><a id= "btnAdd" class="waves-effect waves-light" href="#modalReports">Add New Asset</a></li>
+     <li><a id="btnTransfer" class="waves-effect waves-light" href="#modalReports">Batch Asset Transfer</a></li>
+    <li><a id= "btnAdd" class="waves-effect waves-light" href="#modalReports">Add New Asset</a></li>
+<form action="logout.php" method="get" id="logout">
+<input type ="text" name="logout" value="true" style="display: none;"> 
+    <li><input type="submit" id= "btnlogout" class="waves-effect waves-light" value="Log Out"></li>
+</form>
    </ul>
     <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
 </div>

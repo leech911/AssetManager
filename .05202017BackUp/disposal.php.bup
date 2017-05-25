@@ -1,0 +1,84 @@
+ <html>
+
+
+
+<?php
+require 'header.php'
+?>
+
+ <head>
+
+
+     <title>
+      Asset Manager 
+     </title>
+ </head>
+ <body>
+ <?php
+ include_once('navBar.php');
+ ?>
+<div class="container">
+
+<?php
+// Begin Table generation
+$modalQuery="select tblTaggedAssets.gesaTag, tblLocations.locName, tblTaggedAssets.department, tblAssetDesc.name, tblAssetDesc.make, tblAssetDesc.model, tblTaggedAssets.lastModified
+from tblTaggedAssets
+join tblAssetDesc
+on tblAssetDesc.descID=tblTaggedAssets.descID
+left join tblLocations
+on tblLocations.locationID=tblTaggedAssets.locationID
+where tblTaggedAssets.descID=".$_POST["descID"].";";
+print "<table id='tblTaggedAssets'> ";
+$result = $dbAssetManTest->query($modalQuery);
+$row = $result->fetch(PDO::FETCH_ASSOC);
+print "<thead>";
+print " <tr> ";
+// pulls field data for table generation
+foreach ($row as $field => $value){
+    print " <th>$field</th> ";
+}
+print " </tr> ";
+print "</thead>";
+// end foreach
+//body of Table
+print "<tbody>";
+// pulls live data from DB
+$data = $dbAssetManTest->query($modalQuery);
+$data->setFetchMode(PDO::FETCH_ASSOC);
+foreach($data as $row){
+    print " <tr> ";
+    foreach ($row as $name=>$value){
+        print " <td>$value</td> ";
+    } // end field loop
+    print " </tr> ";
+} // end record loop
+print "</tbody>";
+print "</table>";
+
+?>
+DescID:
+<?php
+echo $_POST["descID"];
+
+?>
+
+</div>
+    </body>
+  <script>
+
+$(function() {
+
+$("#tblTaggedAssets").DataTable();
+});
+
+  $('.button-collapse').sideNav({
+      menuWidth: 300, // Default is 300
+      edge: 'left', // Choose the horizontal origin
+      closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      draggable: true // Choose whether you can drag to open on touch screens
+    }
+  );
+
+  </script>
+
+

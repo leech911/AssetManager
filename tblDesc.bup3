@@ -1,0 +1,317 @@
+<html>
+<style>
+.modal {
+z-index: 99999;
+}
+</style>
+<head>
+<?php 
+	require "header.php";
+	require "../functions.php";
+?>
+</head>
+<body>
+
+<div id="buttons" class="container">
+<br>
+
+<a id="btnShowTagged" class="waves-light btn">Tagged Assets</a>
+<a id="btnShowBR" class="waves-light btn">Back Room Assets</a>
+
+</div>
+
+<div id=modalBox class="container">
+<!-- The Modal -->
+<div id="myModal" class="modal">
+<!-- Modal content -->
+  <div id="modalTbl" class="modal-content">
+    <span id="xlose"  class="close">&times;</span>
+    <p id="selection">What would you like to do with </p>
+
+
+<form action="./disposal.php" method="post" id="frmDisposal">
+  <input type="text" name="descID" style="display: none;" id="descID"><br>
+<input type = "submit" id="btnDescSubmit" style="display: none;">
+
+</form>
+
+
+<form action="./transfer.php" method="post" id="frmTransfer">
+  <input type="text" name="transferDescID" style="display: none;" id="transferDescID"><br>
+<input type = "submit" id="btnTransferSubmit" style="display: none;">
+
+</form>
+
+
+
+
+<?php
+//setcookie("test","thisIsTest");
+//$_COOKIE['test']='differentTest';
+//echo "<script> alert('".$_COOKIE['test']."');</script>";
+?>
+
+<!-- php
+// Begin Table generation
+/*$modalQuery="select tblTaggedAssets.gesaTag, tblLocations.locName, tblTaggedAssets.department, tblAssetDesc.name, tblAssetDesc.make, tblAssetDesc.model, tblTaggedAssets.lastModified
+from tblTaggedAssets 
+join tblAssetDesc 
+on tblAssetDesc.descID=tblTaggedAssets.descID
+join tblLocations
+on tblLocations.locationID=tblTaggedAssets.locationID;";
+print "<table id='tblTaggedAssets'> ";
+$result = $dbAssetManTest->query($modalQuery);
+$row = $result->fetch(PDO::FETCH_ASSOC);
+print "<thead>";
+print " <tr> ";
+// pulls field data for table generation
+foreach ($row as $field => $value){
+    print " <th>$field</th> ";
+}
+print " </tr> ";
+print "</thead>";
+// end foreach
+//body of Table
+print "<tbody>";
+// pulls live data from DB
+$data = $dbAssetManTest->query($modalQuery);
+$data->setFetchMode(PDO::FETCH_ASSOC);
+foreach($data as $row){
+    print " <tr> ";
+    foreach ($row as $name=>$value){
+        print " <td>$value</td> ";
+    } // end field loop
+    print " </tr> ";
+} // end record loop
+print "</tbody>";
+print "</table>";
+-->
+</div>
+<div class="modal-footer">
+ <a href="#!" id="btnCheckIn" class="modal-action modal-close waves-effect waves-green btn-flat">Check In</a>
+ <a href="#!" id="btnTfer" class="modal-action modal-close waves-effect waves-green btn-flat">Transfer</a>
+ <a href="#!" id="btnDisposal" class="modal-action modal-close waves-effect waves-green btn-flat">Disposal</a>
+ <a href="#!" id="btnCheckOut" class="modal-action modal-close waves-effect waves-green btn-flat">Check Out</a>
+ <a href="#!" id="btnAgree" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+ </div>
+</div>
+</div>
+<!-- End Modal -->
+
+<div id=tblBROnHandCntnr class="container">
+<h4> Back Room Assets</h4>
+<?php
+// Begin Table generation
+$queryBR="select tblAssetDesc.descID, tblAssetDesc.name, tblAssetDesc.make, tblAssetDesc.model, tblStorageLocations.rack, tblStorageLocations.shelf, tblBROnHand.qty as 'BackRoom qty',
+case tblAssetDesc.taggable
+when 0 then 'True'
+when 1 then 'False'
+End as taggable
+from tblTaggedAssets
+right join tblAssetDesc on
+tblTaggedAssets.descID=tblAssetDesc.descID
+right join  tblStorageLocations on
+tblStorageLocations.locationID=tblAssetDesc.storeRmLocation
+right join tblBROnHand on
+tblBROnHand.descID=tblAssetDesc.descID
+group by tblAssetDesc.descID;";
+print "<table id='tblBROnHand'> ";
+$result = $dbAssetManTest->query($queryBR);
+$row = $result->fetch(PDO::FETCH_ASSOC);
+print "<thead>";
+print " <tr> ";
+// pulls field data for table generation
+foreach ($row as $field => $value){
+    print " <th>$field</th> ";
+}
+print " </tr> ";
+print "</thead>";
+// end foreach
+//body of Table
+print "<tbody>";
+// pulls live data from DB
+$data = $dbAssetManTest->query($queryBR);
+$data->setFetchMode(PDO::FETCH_ASSOC);
+foreach($data as $row){
+    print " <tr> ";
+    foreach ($row as $name=>$value){
+        print " <td>$value</td> ";
+    } // end field loop
+    print " </tr> ";
+} // end record loop
+print "</tbody>";
+print "</table>";
+?>
+
+</div>
+<div id=tblAssetDescCntnr class="container">
+<h4>Tagged Assets</h4>
+<?php
+// Begin Table generation
+
+
+$queryTag="select tblAssetDesc.descID, tblAssetDesc.name, tblAssetDesc.make, tblAssetDesc.model, tblStorageLocations.rack, tblStorageLocations.shelf, count(distinct tblTaggedAssets.gesaTag) as 'tagged qty',
+case tblAssetDesc.taggable
+when 0 then 'True'
+when 1 then 'False'
+End as taggable
+from tblTaggedAssets
+right join tblAssetDesc on
+tblTaggedAssets.descID=tblAssetDesc.descID
+join  tblStorageLocations on
+tblStorageLocations.locationID=tblAssetDesc.storeRmLocation
+where tblTaggedAssets.active=1
+group by tblAssetDesc.descID;";
+
+
+print "<table id='tblAssetDesc'> ";
+$result = $dbAssetManTest->query($queryTag);
+$row = $result->fetch(PDO::FETCH_ASSOC);
+print "<thead>";
+print " <tr> ";
+// pulls field data for table generation
+foreach ($row as $field => $value){
+    print " <th>$field</th> ";
+}
+print " </tr> ";
+print "</thead>";
+// end foreach
+//body of Table
+print "<tbody>";
+// pulls live data from DB
+$data = $dbAssetManTest->query($queryTag);
+$data->setFetchMode(PDO::FETCH_ASSOC);
+foreach($data as $row){
+    print " <tr> ";
+    foreach ($row as $name=>$value){
+        print " <td>$value</td> ";
+    } // end field loop
+    print " </tr> ";
+} // end record loop
+print "</tbody>";
+print "</table>";
+?>
+
+</div>
+
+<script>
+var modal = document.getElementById("myModal");
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+      modal.style.display = "none";
+        location.reload();
+  }
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+$(document).ready( function(){
+        $("#tblAssetDesc").DataTable();
+       
+        });
+ $(document).ready( function(){
+         $("#tblTaggedAssets").DataTable();
+        });
+$(document).ready(function() {
+// pulling from table to populate form
+//table row on click even    
+//$('#tblAssetDesc tbody').one('click', 'tr', function () {
+
+ $(document).ready( function(){
+         $("#tblTaggedAssets").DataTable();
+        });
+
+var tableBR=$('#tblBROnHand').DataTable();
+var table= $('#tblAssetDesc').DataTable();
+table.one('click', 'tr', function () {
+//data will be aray with row info at each index will get passed to the form
+var data = table.row(this).data();
+var tcast = data.toString();
+var pass = tcast.split(",");
+var qData = pass[0];
+//alert(qData);
+
+
+
+$('input[name="descID"]').val(qData);
+$('input[name="transferDescID"]').val(qData);
+
+
+$.ajax({
+    type:'POST',
+    url: 'disposal.php',
+    data: qData
+});
+//$.cookie("data",data);
+//alert($.cookie("data"[0]));
+$(function() {
+    $("#selection").append("<strong>"+data[1]+"s?</strong>");
+    if (data[8]=="True") {
+ $("#btnCheckOut").hide();
+ }else {
+$("#btnTfer").hide();
+}
+});
+// Positions the Modal in the right spot and brings it to the front. 
+$("#modalBox").css('position', 'absolute');
+$("#modalBox").css('z-index', 9999);
+        modal.style.visibility = "visible";
+         modal.style.display = "block";
+   } );
+} );
+$(document).ready( function(){
+    $('#btnAgree').on('click', function (){
+        modal.style.display="none";
+        location.reload();
+    });
+});
+var passText="test";
+$(function() {
+    $("#ptest").append(passText);
+});
+
+$(function() {
+	$("#btnDisposal").on('click', function() {
+		$("#frmDisposal").submit();
+});
+
+});
+
+
+
+$(function() {
+        $("#btnTfer").on('click', function() {
+                $("#frmTransfer").submit();
+});
+
+});
+
+
+
+$(function() {
+        $("#tblAssetDescCntnr").hide();
+
+        $("#tblBROnHandCntnr").hide();
+        $("#btnShowTagged").on('click', function(){
+
+
+                $("#tblBROnHandCntnr").hide();
+                $("#tblAssetDescCntnr").show();
+        });
+
+        $("#btnShowBR").on('click', function(){
+        $("#tblAssetDescCntnr").hide();
+        $("#tblBROnHandCntnr").show();
+        });
+});
+
+
+
+
+</script>
+</body>
+</html>

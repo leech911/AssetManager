@@ -1,0 +1,406 @@
+[20-May-2017 21:58:20 UTC] PHP Fatal error:  Cannot redeclare class USER in /home/mushmasters/public_html/loginTest/class.user.php on line 81
+[20-May-2017 22:02:10 UTC] PHP Notice:  Undefined index: user_session in /home/mushmasters/public_html/loginTest/home.php on line 7
+[20-May-2017 22:25:45 UTC] PHP Notice:  Undefined variable: fname in /home/mushmasters/public_html/loginTest/sign-up.php on line 46
+[20-May-2017 22:25:45 UTC] PHP Notice:  Undefined variable: lname in /home/mushmasters/public_html/loginTest/sign-up.php on line 46
+[20-May-2017 22:27:56 UTC] PHP Warning:  require_once(session.php): failed to open stream: No such file or directory in /home/mushmasters/public_html/loginTest/logout.php on line 2
+[20-May-2017 22:27:56 UTC] PHP Fatal error:  require_once(): Failed opening required 'session.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/mushmasters/public_html/loginTest/logout.php on line 2
+[20-May-2017 22:28:02 UTC] PHP Warning:  require_once(session.php): failed to open stream: No such file or directory in /home/mushmasters/public_html/loginTest/logout.php on line 2
+[20-May-2017 22:28:02 UTC] PHP Fatal error:  require_once(): Failed opening required 'session.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/mushmasters/public_html/loginTest/logout.php on line 2
+[20-May-2017 22:29:49 UTC] PHP Warning:  require_once(session.php): failed to open stream: No such file or directory in /home/mushmasters/public_html/loginTest/logout.php on line 2
+[20-May-2017 22:29:49 UTC] PHP Fatal error:  require_once(): Failed opening required 'session.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/mushmasters/public_html/loginTest/logout.php on line 2
+[20-May-2017 22:31:32 UTC] PHP Warning:  Missing argument 1 for USER::__construct(), called in /home/mushmasters/public_html/loginTest/session.php on line 6 and defined in /home/mushmasters/public_html/loginTest/class.user.php on line 6
+[20-May-2017 22:31:32 UTC] PHP Notice:  Undefined variable: DB_con in /home/mushmasters/public_html/loginTest/class.user.php on line 8
+[20-May-2017 22:31:32 UTC] PHP Warning:  Missing argument 1 for USER::__construct(), called in /home/mushmasters/public_html/loginTest/logout.php on line 4 and defined in /home/mushmasters/public_html/loginTest/class.user.php on line 6
+[20-May-2017 22:31:32 UTC] PHP Notice:  Undefined variable: DB_con in /home/mushmasters/public_html/loginTest/class.user.php on line 8
+[20-May-2017 22:31:32 UTC] PHP Fatal error:  Call to undefined method USER::doLogout() in /home/mushmasters/public_html/loginTest/logout.php on line 12
+[20-May-2017 22:31:34 UTC] PHP Warning:  Missing argument 1 for USER::__construct(), called in /home/mushmasters/public_html/loginTest/session.php on line 6 and defined in /home/mushmasters/public_html/loginTest/class.user.php on line 6
+[20-May-2017 22:31:34 UTC] PHP Notice:  Undefined variable: DB_con in /home/mushmasters/public_html/loginTest/class.user.php on line 8
+[20-May-2017 22:31:34 UTC] PHP Warning:  Missing argument 1 for USER::__construct(), called in /home/mushmasters/public_html/loginTest/logout.php on line 4 and defined in /home/mushmasters/public_html/loginTest/class.user.php on line 6
+[20-May-2017 22:31:34 UTC] PHP Notice:  Undefined variable: DB_con in /home/mushmasters/public_html/loginTest/class.user.php on line 8
+[20-May-2017 22:31:34 UTC] PHP Fatal error:  Call to undefined method USER::doLogout() in /home/mushmasters/public_html/loginTest/logout.php on line 12
+[20-May-2017 22:31:36 UTC] PHP Warning:  Missing argument 1 for USER::__construct(), called in /home/mushmasters/public_html/loginTest/session.php on line 6 and defined in /home/mushmasters/public_html/loginTest/class.user.php on line 6
+[20-May-2017 22:31:36 UTC] PHP Notice:  Undefined variable: DB_con in /home/mushmasters/public_html/loginTest/class.user.php on line 8
+[20-May-2017 22:31:36 UTC] PHP Warning:  Missing argument 1 for USER::__construct(), called in /home/mushmasters/public_html/loginTest/logout.php on line 4 and defined in /home/mushmasters/public_html/loginTest/class.user.php on line 6
+[20-May-2017 22:31:36 UTC] PHP Notice:  Undefined variable: DB_con in /home/mushmasters/public_html/loginTest/class.user.php on line 8
+[20-May-2017 22:31:36 UTC] PHP Fatal error:  Call to undefined method USER::doLogout() in /home/mushmasters/public_html/loginTest/logout.php on line 12
+[20-May-2017 22:31:39 UTC] PHP Warning:  Missing argument 1 for USER::__construct(), called in /home/mushmasters/public_html/loginTest/session.php on line 6 and defined in /home/mushmasters/public_html/loginTest/class.user.php on line 6
+[20-May-2017 22:31:39 UTC] PHP Notice:  Undefined variable: DB_con in /home/mushmasters/public_html/loginTest/class.user.php on line 8
+[20-May-2017 22:31:39 UTC] PHP Warning:  Missing argument 1 for USER::__construct(), called in /home/mushmasters/public_html/loginTest/logout.php on line 4 and defined in /home/mushmasters/public_html/loginTest/class.user.php on line 6
+[20-May-2017 22:31:39 UTC] PHP Notice:  Undefined variable: DB_con in /home/mushmasters/public_html/loginTest/class.user.php on line 8
+[20-May-2017 22:31:39 UTC] PHP Fatal error:  Call to undefined method USER::doLogout() in /home/mushmasters/public_html/loginTest/logout.php on line 12
+[20-May-2017 22:31:44 UTC] PHP Warning:  Missing argument 1 for USER::__construct(), called in /home/mushmasters/public_html/loginTest/session.php on line 6 and defined in /home/mushmasters/public_html/loginTest/class.user.php on line 6
+[20-May-2017 22:31:44 UTC] PHP Notice:  Undefined variable: DB_con in /home/mushmasters/public_html/loginTest/class.user.php on line 8
+[20-May-2017 22:31:44 UTC] PHP Warning:  Missing argument 1 for USER::__construct(), called in /home/mushmasters/public_html/loginTest/logout.php on line 4 and defined in /home/mushmasters/public_html/loginTest/class.user.php on line 6
+[20-May-2017 22:31:44 UTC] PHP Notice:  Undefined variable: DB_con in /home/mushmasters/public_html/loginTest/class.user.php on line 8
+[20-May-2017 22:31:44 UTC] PHP Fatal error:  Call to undefined method USER::doLogout() in /home/mushmasters/public_html/loginTest/logout.php on line 12
+[20-May-2017 22:31:49 UTC] PHP Warning:  Missing argument 1 for USER::__construct(), called in /home/mushmasters/public_html/loginTest/session.php on line 6 and defined in /home/mushmasters/public_html/loginTest/class.user.php on line 6
+[20-May-2017 22:31:49 UTC] PHP Notice:  Undefined variable: DB_con in /home/mushmasters/public_html/loginTest/class.user.php on line 8
+[20-May-2017 22:31:49 UTC] PHP Warning:  Missing argument 1 for USER::__construct(), called in /home/mushmasters/public_html/loginTest/logout.php on line 4 and defined in /home/mushmasters/public_html/loginTest/class.user.php on line 6
+[20-May-2017 22:31:49 UTC] PHP Notice:  Undefined variable: DB_con in /home/mushmasters/public_html/loginTest/class.user.php on line 8
+[20-May-2017 22:31:49 UTC] PHP Fatal error:  Call to undefined method USER::doLogout() in /home/mushmasters/public_html/loginTest/logout.php on line 12
+[20-May-2017 22:31:52 UTC] PHP Warning:  Missing argument 1 for USER::__construct(), called in /home/mushmasters/public_html/loginTest/session.php on line 6 and defined in /home/mushmasters/public_html/loginTest/class.user.php on line 6
+[20-May-2017 22:31:52 UTC] PHP Notice:  Undefined variable: DB_con in /home/mushmasters/public_html/loginTest/class.user.php on line 8
+[20-May-2017 22:31:52 UTC] PHP Warning:  Missing argument 1 for USER::__construct(), called in /home/mushmasters/public_html/loginTest/logout.php on line 4 and defined in /home/mushmasters/public_html/loginTest/class.user.php on line 6
+[20-May-2017 22:31:52 UTC] PHP Notice:  Undefined variable: DB_con in /home/mushmasters/public_html/loginTest/class.user.php on line 8
+[20-May-2017 22:31:52 UTC] PHP Fatal error:  Call to undefined method USER::doLogout() in /home/mushmasters/public_html/loginTest/logout.php on line 12
+[20-May-2017 22:31:54 UTC] PHP Warning:  Missing argument 1 for USER::__construct(), called in /home/mushmasters/public_html/loginTest/session.php on line 6 and defined in /home/mushmasters/public_html/loginTest/class.user.php on line 6
+[20-May-2017 22:31:54 UTC] PHP Notice:  Undefined variable: DB_con in /home/mushmasters/public_html/loginTest/class.user.php on line 8
+[20-May-2017 22:31:54 UTC] PHP Warning:  Missing argument 1 for USER::__construct(), called in /home/mushmasters/public_html/loginTest/logout.php on line 4 and defined in /home/mushmasters/public_html/loginTest/class.user.php on line 6
+[20-May-2017 22:31:54 UTC] PHP Notice:  Undefined variable: DB_con in /home/mushmasters/public_html/loginTest/class.user.php on line 8
+[20-May-2017 22:31:54 UTC] PHP Fatal error:  Call to undefined method USER::doLogout() in /home/mushmasters/public_html/loginTest/logout.php on line 12
+[20-May-2017 22:32:01 UTC] PHP Warning:  Missing argument 1 for USER::__construct(), called in /home/mushmasters/public_html/loginTest/session.php on line 6 and defined in /home/mushmasters/public_html/loginTest/class.user.php on line 6
+[20-May-2017 22:32:01 UTC] PHP Notice:  Undefined variable: DB_con in /home/mushmasters/public_html/loginTest/class.user.php on line 8
+[20-May-2017 22:32:01 UTC] PHP Warning:  Missing argument 1 for USER::__construct(), called in /home/mushmasters/public_html/loginTest/logout.php on line 4 and defined in /home/mushmasters/public_html/loginTest/class.user.php on line 6
+[20-May-2017 22:32:01 UTC] PHP Notice:  Undefined variable: DB_con in /home/mushmasters/public_html/loginTest/class.user.php on line 8
+[20-May-2017 22:32:01 UTC] PHP Fatal error:  Call to undefined method USER::doLogout() in /home/mushmasters/public_html/loginTest/logout.php on line 12
+[20-May-2017 22:35:16 UTC] PHP Notice:  Undefined index: user_session in /home/mushmasters/public_html/loginTest/home.php on line 7
+[20-May-2017 22:35:33 UTC] PHP Warning:  Missing argument 1 for USER::__construct(), called in /home/mushmasters/public_html/loginTest/session.php on line 6 and defined in /home/mushmasters/public_html/loginTest/class.user.php on line 6
+[20-May-2017 22:35:33 UTC] PHP Notice:  Undefined variable: DB_con in /home/mushmasters/public_html/loginTest/class.user.php on line 8
+[20-May-2017 22:35:33 UTC] PHP Warning:  Missing argument 1 for USER::__construct(), called in /home/mushmasters/public_html/loginTest/logout.php on line 4 and defined in /home/mushmasters/public_html/loginTest/class.user.php on line 6
+[20-May-2017 22:35:33 UTC] PHP Notice:  Undefined variable: DB_con in /home/mushmasters/public_html/loginTest/class.user.php on line 8
+[20-May-2017 22:35:33 UTC] PHP Fatal error:  Call to undefined method USER::doLogout() in /home/mushmasters/public_html/loginTest/logout.php on line 12
+[20-May-2017 22:35:34 UTC] PHP Warning:  Missing argument 1 for USER::__construct(), called in /home/mushmasters/public_html/loginTest/session.php on line 6 and defined in /home/mushmasters/public_html/loginTest/class.user.php on line 6
+[20-May-2017 22:35:34 UTC] PHP Notice:  Undefined variable: DB_con in /home/mushmasters/public_html/loginTest/class.user.php on line 8
+[20-May-2017 22:35:34 UTC] PHP Warning:  Missing argument 1 for USER::__construct(), called in /home/mushmasters/public_html/loginTest/logout.php on line 4 and defined in /home/mushmasters/public_html/loginTest/class.user.php on line 6
+[20-May-2017 22:35:34 UTC] PHP Notice:  Undefined variable: DB_con in /home/mushmasters/public_html/loginTest/class.user.php on line 8
+[20-May-2017 22:35:34 UTC] PHP Fatal error:  Call to undefined method USER::doLogout() in /home/mushmasters/public_html/loginTest/logout.php on line 12
+[20-May-2017 22:35:35 UTC] PHP Warning:  Missing argument 1 for USER::__construct(), called in /home/mushmasters/public_html/loginTest/session.php on line 6 and defined in /home/mushmasters/public_html/loginTest/class.user.php on line 6
+[20-May-2017 22:35:35 UTC] PHP Notice:  Undefined variable: DB_con in /home/mushmasters/public_html/loginTest/class.user.php on line 8
+[20-May-2017 22:35:35 UTC] PHP Warning:  Missing argument 1 for USER::__construct(), called in /home/mushmasters/public_html/loginTest/logout.php on line 4 and defined in /home/mushmasters/public_html/loginTest/class.user.php on line 6
+[20-May-2017 22:35:35 UTC] PHP Notice:  Undefined variable: DB_con in /home/mushmasters/public_html/loginTest/class.user.php on line 8
+[20-May-2017 22:35:35 UTC] PHP Fatal error:  Call to undefined method USER::doLogout() in /home/mushmasters/public_html/loginTest/logout.php on line 12
+[20-May-2017 22:35:36 UTC] PHP Warning:  Missing argument 1 for USER::__construct(), called in /home/mushmasters/public_html/loginTest/session.php on line 6 and defined in /home/mushmasters/public_html/loginTest/class.user.php on line 6
+[20-May-2017 22:35:36 UTC] PHP Notice:  Undefined variable: DB_con in /home/mushmasters/public_html/loginTest/class.user.php on line 8
+[20-May-2017 22:35:36 UTC] PHP Warning:  Missing argument 1 for USER::__construct(), called in /home/mushmasters/public_html/loginTest/logout.php on line 4 and defined in /home/mushmasters/public_html/loginTest/class.user.php on line 6
+[20-May-2017 22:35:36 UTC] PHP Notice:  Undefined variable: DB_con in /home/mushmasters/public_html/loginTest/class.user.php on line 8
+[20-May-2017 22:35:36 UTC] PHP Fatal error:  Call to undefined method USER::doLogout() in /home/mushmasters/public_html/loginTest/logout.php on line 12
+[20-May-2017 22:35:36 UTC] PHP Warning:  Missing argument 1 for USER::__construct(), called in /home/mushmasters/public_html/loginTest/session.php on line 6 and defined in /home/mushmasters/public_html/loginTest/class.user.php on line 6
+[20-May-2017 22:35:36 UTC] PHP Notice:  Undefined variable: DB_con in /home/mushmasters/public_html/loginTest/class.user.php on line 8
+[20-May-2017 22:35:36 UTC] PHP Warning:  Missing argument 1 for USER::__construct(), called in /home/mushmasters/public_html/loginTest/logout.php on line 4 and defined in /home/mushmasters/public_html/loginTest/class.user.php on line 6
+[20-May-2017 22:35:36 UTC] PHP Notice:  Undefined variable: DB_con in /home/mushmasters/public_html/loginTest/class.user.php on line 8
+[20-May-2017 22:35:36 UTC] PHP Fatal error:  Call to undefined method USER::doLogout() in /home/mushmasters/public_html/loginTest/logout.php on line 12
+[20-May-2017 22:35:36 UTC] PHP Warning:  Missing argument 1 for USER::__construct(), called in /home/mushmasters/public_html/loginTest/session.php on line 6 and defined in /home/mushmasters/public_html/loginTest/class.user.php on line 6
+[20-May-2017 22:35:36 UTC] PHP Notice:  Undefined variable: DB_con in /home/mushmasters/public_html/loginTest/class.user.php on line 8
+[20-May-2017 22:35:36 UTC] PHP Warning:  Missing argument 1 for USER::__construct(), called in /home/mushmasters/public_html/loginTest/logout.php on line 4 and defined in /home/mushmasters/public_html/loginTest/class.user.php on line 6
+[20-May-2017 22:35:36 UTC] PHP Notice:  Undefined variable: DB_con in /home/mushmasters/public_html/loginTest/class.user.php on line 8
+[20-May-2017 22:35:36 UTC] PHP Fatal error:  Call to undefined method USER::doLogout() in /home/mushmasters/public_html/loginTest/logout.php on line 12
+[20-May-2017 22:35:36 UTC] PHP Warning:  Missing argument 1 for USER::__construct(), called in /home/mushmasters/public_html/loginTest/session.php on line 6 and defined in /home/mushmasters/public_html/loginTest/class.user.php on line 6
+[20-May-2017 22:35:36 UTC] PHP Notice:  Undefined variable: DB_con in /home/mushmasters/public_html/loginTest/class.user.php on line 8
+[20-May-2017 22:35:36 UTC] PHP Warning:  Missing argument 1 for USER::__construct(), called in /home/mushmasters/public_html/loginTest/logout.php on line 4 and defined in /home/mushmasters/public_html/loginTest/class.user.php on line 6
+[20-May-2017 22:35:36 UTC] PHP Notice:  Undefined variable: DB_con in /home/mushmasters/public_html/loginTest/class.user.php on line 8
+[20-May-2017 22:35:36 UTC] PHP Fatal error:  Call to undefined method USER::doLogout() in /home/mushmasters/public_html/loginTest/logout.php on line 12
+[20-May-2017 22:35:47 UTC] PHP Warning:  Missing argument 1 for USER::__construct(), called in /home/mushmasters/public_html/loginTest/session.php on line 6 and defined in /home/mushmasters/public_html/loginTest/class.user.php on line 6
+[20-May-2017 22:35:47 UTC] PHP Notice:  Undefined variable: DB_con in /home/mushmasters/public_html/loginTest/class.user.php on line 8
+[20-May-2017 22:35:47 UTC] PHP Warning:  Missing argument 1 for USER::__construct(), called in /home/mushmasters/public_html/loginTest/logout.php on line 4 and defined in /home/mushmasters/public_html/loginTest/class.user.php on line 6
+[20-May-2017 22:35:47 UTC] PHP Notice:  Undefined variable: DB_con in /home/mushmasters/public_html/loginTest/class.user.php on line 8
+[20-May-2017 22:35:47 UTC] PHP Fatal error:  Call to undefined method USER::doLogout() in /home/mushmasters/public_html/loginTest/logout.php on line 12
+[20-May-2017 22:35:49 UTC] PHP Warning:  Missing argument 1 for USER::__construct(), called in /home/mushmasters/public_html/loginTest/session.php on line 6 and defined in /home/mushmasters/public_html/loginTest/class.user.php on line 6
+[20-May-2017 22:35:49 UTC] PHP Notice:  Undefined variable: DB_con in /home/mushmasters/public_html/loginTest/class.user.php on line 8
+[20-May-2017 22:35:49 UTC] PHP Warning:  Missing argument 1 for USER::__construct(), called in /home/mushmasters/public_html/loginTest/logout.php on line 4 and defined in /home/mushmasters/public_html/loginTest/class.user.php on line 6
+[20-May-2017 22:35:49 UTC] PHP Notice:  Undefined variable: DB_con in /home/mushmasters/public_html/loginTest/class.user.php on line 8
+[20-May-2017 22:35:49 UTC] PHP Fatal error:  Call to undefined method USER::doLogout() in /home/mushmasters/public_html/loginTest/logout.php on line 12
+[20-May-2017 22:35:50 UTC] PHP Warning:  Missing argument 1 for USER::__construct(), called in /home/mushmasters/public_html/loginTest/session.php on line 6 and defined in /home/mushmasters/public_html/loginTest/class.user.php on line 6
+[20-May-2017 22:35:50 UTC] PHP Notice:  Undefined variable: DB_con in /home/mushmasters/public_html/loginTest/class.user.php on line 8
+[20-May-2017 22:35:50 UTC] PHP Warning:  Missing argument 1 for USER::__construct(), called in /home/mushmasters/public_html/loginTest/logout.php on line 4 and defined in /home/mushmasters/public_html/loginTest/class.user.php on line 6
+[20-May-2017 22:35:50 UTC] PHP Notice:  Undefined variable: DB_con in /home/mushmasters/public_html/loginTest/class.user.php on line 8
+[20-May-2017 22:35:50 UTC] PHP Fatal error:  Call to undefined method USER::doLogout() in /home/mushmasters/public_html/loginTest/logout.php on line 12
+[20-May-2017 22:40:15 UTC] PHP Warning:  Missing argument 1 for USER::__construct(), called in /home/mushmasters/public_html/loginTest/session.php on line 6 and defined in /home/mushmasters/public_html/loginTest/class.user.php on line 6
+[20-May-2017 22:40:15 UTC] PHP Notice:  Undefined variable: DB_con in /home/mushmasters/public_html/loginTest/class.user.php on line 8
+[20-May-2017 22:40:15 UTC] PHP Warning:  Missing argument 1 for USER::__construct(), called in /home/mushmasters/public_html/loginTest/logout.php on line 4 and defined in /home/mushmasters/public_html/loginTest/class.user.php on line 6
+[20-May-2017 22:40:15 UTC] PHP Notice:  Undefined variable: DB_con in /home/mushmasters/public_html/loginTest/class.user.php on line 8
+[20-May-2017 22:51:40 UTC] PHP Warning:  Missing argument 1 for USER::__construct(), called in /home/mushmasters/public_html/loginTest/session.php on line 6 and defined in /home/mushmasters/public_html/loginTest/class.user.php on line 6
+[20-May-2017 22:51:40 UTC] PHP Notice:  Undefined variable: DB_con in /home/mushmasters/public_html/loginTest/class.user.php on line 8
+[20-May-2017 22:51:40 UTC] PHP Warning:  Missing argument 1 for USER::__construct(), called in /home/mushmasters/public_html/loginTest/logout.php on line 4 and defined in /home/mushmasters/public_html/loginTest/class.user.php on line 6
+[20-May-2017 22:51:40 UTC] PHP Notice:  Undefined variable: DB_con in /home/mushmasters/public_html/loginTest/class.user.php on line 8
+[20-May-2017 22:51:57 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/mushmasters/public_html/loginTest/home.php on line 3
+[20-May-2017 22:59:07 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/mushmasters/public_html/loginTest/home.php on line 3
+[21-May-2017 02:06:31 UTC] PHP Notice:  Undefined index: inQty in /home/mushmasters/public_html/assetMan/checkIn.php on line 13
+[21-May-2017 02:06:31 UTC] PHP Notice:  Undefined index: inID in /home/mushmasters/public_html/assetMan/checkIn.php on line 14
+[21-May-2017 02:06:31 UTC] PHP Notice:  Undefined index: inPo in /home/mushmasters/public_html/assetMan/checkIn.php on line 15
+[21-May-2017 02:09:18 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/mushmasters/public_html/assetMan/header.php on line 31
+[21-May-2017 02:09:53 UTC] PHP Notice:  Undefined index: inQty in /home/mushmasters/public_html/assetMan/checkIn.php on line 13
+[21-May-2017 02:09:53 UTC] PHP Notice:  Undefined index: inID in /home/mushmasters/public_html/assetMan/checkIn.php on line 14
+[21-May-2017 02:09:53 UTC] PHP Notice:  Undefined index: inPo in /home/mushmasters/public_html/assetMan/checkIn.php on line 15
+[21-May-2017 02:10:04 UTC] PHP Notice:  Undefined index: transferDescID in /home/mushmasters/public_html/assetMan/transfer.php on line 4
+[21-May-2017 02:10:04 UTC] PHP Fatal error:  Undefined class constant 'FETCH' in /home/mushmasters/public_html/assetMan/transfer.php on line 38
+[21-May-2017 02:10:18 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:10:18 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:10:18 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:10:19 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:10:19 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:10:19 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:10:20 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:10:20 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:10:20 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:10:20 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:10:21 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:10:21 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:10:21 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:10:22 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:10:22 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:10:22 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:10:22 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:10:23 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:10:23 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:10:23 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:10:24 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:10:29 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:10:29 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:10:29 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:10:30 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:10:30 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:10:30 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:10:31 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:10:31 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:10:31 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:10:31 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:10:32 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:11:02 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:11:02 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:11:02 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:11:03 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:11:03 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:11:03 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:11:04 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:11:04 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:11:04 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:11:04 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:11:05 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:12:05 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:12:05 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:12:05 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:12:06 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:12:06 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:12:06 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:12:07 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:12:07 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:12:07 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:12:07 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:12:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:17:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:17:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:17:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:17:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:17:02 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:17:02 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:17:02 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:17:02 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:17:03 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:17:03 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:17:03 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:17:24 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:17:24 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:17:24 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:17:25 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:17:25 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:17:25 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:17:25 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:17:26 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:17:26 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:17:26 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:17:27 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:17:27 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:17:27 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:17:27 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:17:28 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:17:28 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:17:28 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:17:29 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:17:29 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:17:29 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:17:29 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:17:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:17:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:17:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:17:36 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:17:36 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:17:36 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:17:36 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:17:37 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:17:37 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:17:37 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:17:38 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:18:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:18:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:18:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:18:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:18:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:18:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:18:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:18:10 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:18:10 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:18:10 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:18:11 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:19:11 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:19:11 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:19:11 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:19:12 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:19:12 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:19:12 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:19:13 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:19:13 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:19:16 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:19:16 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:19:17 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/header.php on line 8
+[21-May-2017 02:22:48 UTC] PHP Notice:  Undefined index: transferDescID in /home/mushmasters/public_html/assetMan/transfer.php on line 4
+[21-May-2017 02:22:48 UTC] PHP Fatal error:  Undefined class constant 'FETCH' in /home/mushmasters/public_html/assetMan/transfer.php on line 38
+[21-May-2017 02:22:59 UTC] PHP Notice:  Undefined index: inQty in /home/mushmasters/public_html/assetMan/checkIn.php on line 13
+[21-May-2017 02:22:59 UTC] PHP Notice:  Undefined index: inID in /home/mushmasters/public_html/assetMan/checkIn.php on line 14
+[21-May-2017 02:22:59 UTC] PHP Notice:  Undefined index: inPo in /home/mushmasters/public_html/assetMan/checkIn.php on line 15
+[21-May-2017 02:24:29 UTC] PHP Parse error:  syntax error, unexpected ']' in /home/mushmasters/public_html/assetMan/header.php on line 17
+[21-May-2017 02:24:40 UTC] PHP Parse error:  syntax error, unexpected ']' in /home/mushmasters/public_html/assetMan/header.php on line 17
+[21-May-2017 02:25:33 UTC] PHP Parse error:  syntax error, unexpected ']' in /home/mushmasters/public_html/assetMan/header.php on line 18
+[21-May-2017 02:26:52 UTC] PHP Parse error:  syntax error, unexpected ']' in /home/mushmasters/public_html/assetMan/header.php on line 18
+[21-May-2017 02:27:27 UTC] PHP Notice:  Undefined index: inQty in /home/mushmasters/public_html/assetMan/checkIn.php on line 14
+[21-May-2017 02:27:27 UTC] PHP Notice:  Undefined index: inID in /home/mushmasters/public_html/assetMan/checkIn.php on line 15
+[21-May-2017 02:27:27 UTC] PHP Notice:  Undefined index: inPo in /home/mushmasters/public_html/assetMan/checkIn.php on line 16
+[21-May-2017 02:27:38 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 02:27:38 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 02:27:38 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 02:27:38 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 02:27:39 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 02:27:39 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 02:27:39 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 02:27:39 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 02:27:40 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 02:27:40 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 02:27:40 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 02:27:41 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 02:27:41 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 02:27:41 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 02:27:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 02:27:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 02:27:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 02:27:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 02:27:43 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 02:27:43 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 02:27:43 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 02:27:49 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 02:27:49 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 02:27:49 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 02:27:50 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 02:27:50 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 02:27:50 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 02:27:50 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 02:27:51 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 02:27:51 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 02:27:51 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 02:27:52 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 02:36:42 UTC] PHP Notice:  Undefined index: transferDescID in /home/mushmasters/public_html/assetMan/transfer.php on line 4
+[21-May-2017 02:36:42 UTC] PHP Fatal error:  Undefined class constant 'FETCH' in /home/mushmasters/public_html/assetMan/transfer.php on line 38
+[21-May-2017 02:37:13 UTC] PHP Notice:  Undefined index: inQty in /home/mushmasters/public_html/assetMan/checkIn.php on line 14
+[21-May-2017 02:37:13 UTC] PHP Notice:  Undefined index: inID in /home/mushmasters/public_html/assetMan/checkIn.php on line 15
+[21-May-2017 02:37:13 UTC] PHP Notice:  Undefined index: inPo in /home/mushmasters/public_html/assetMan/checkIn.php on line 16
+[21-May-2017 05:19:44 UTC] PHP Notice:  Undefined index: transferDescID in /home/mushmasters/public_html/assetMan/transfer.php on line 4
+[21-May-2017 05:19:44 UTC] PHP Fatal error:  Undefined class constant 'FETCH' in /home/mushmasters/public_html/assetMan/transfer.php on line 38
+[21-May-2017 05:19:51 UTC] PHP Notice:  Undefined index: inQty in /home/mushmasters/public_html/assetMan/checkIn.php on line 14
+[21-May-2017 05:19:51 UTC] PHP Notice:  Undefined index: inID in /home/mushmasters/public_html/assetMan/checkIn.php on line 15
+[21-May-2017 05:19:51 UTC] PHP Notice:  Undefined index: inPo in /home/mushmasters/public_html/assetMan/checkIn.php on line 16
+[21-May-2017 05:19:56 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 05:19:56 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 05:19:57 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 05:19:57 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 05:19:58 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 05:19:58 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 05:19:59 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 05:19:59 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 05:19:59 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 05:20:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 05:20:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 05:20:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 05:20:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 05:20:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 05:20:07 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 05:20:07 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 05:20:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 05:20:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 05:20:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 05:20:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 05:20:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 05:20:40 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 05:20:40 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 05:20:41 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 05:20:41 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 05:20:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 05:20:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 05:20:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 05:21:43 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 05:21:43 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 05:21:44 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 05:21:44 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 05:21:44 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 05:21:45 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 05:21:45 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 05:26:46 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 05:26:46 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 05:26:47 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 05:26:47 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 05:26:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 05:26:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 05:26:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mushmasters/public_html/assetMan/navBar.php:105) in /home/mushmasters/public_html/assetMan/class.user.php on line 83
+[21-May-2017 05:30:33 UTC] PHP Notice:  Undefined index: user_session in /home/mushmasters/public_html/assetMan/header.php on line 17
+[21-May-2017 05:30:33 UTC] PHP Notice:  Undefined index: inQty in /home/mushmasters/public_html/assetMan/checkIn.php on line 14
+[21-May-2017 05:30:33 UTC] PHP Notice:  Undefined index: inID in /home/mushmasters/public_html/assetMan/checkIn.php on line 15
+[21-May-2017 05:30:33 UTC] PHP Notice:  Undefined index: inPo in /home/mushmasters/public_html/assetMan/checkIn.php on line 16
+[21-May-2017 05:31:04 UTC] PHP Notice:  Undefined index: user_session in /home/mushmasters/public_html/assetMan/header.php on line 17
+[21-May-2017 05:31:04 UTC] PHP Notice:  Undefined index: user_session in /home/mushmasters/public_html/assetMan/header.php on line 17
+[21-May-2017 05:31:04 UTC] PHP Notice:  Undefined index: user_session in /home/mushmasters/public_html/assetMan/header.php on line 17
+[21-May-2017 05:31:09 UTC] PHP Notice:  Undefined index: user_session in /home/mushmasters/public_html/assetMan/header.php on line 17
+[21-May-2017 05:31:09 UTC] PHP Notice:  Undefined index: transferDescID in /home/mushmasters/public_html/assetMan/transfer.php on line 4
+[21-May-2017 05:31:09 UTC] PHP Notice:  Undefined index: user_session in /home/mushmasters/public_html/assetMan/header.php on line 17
+[21-May-2017 05:31:09 UTC] PHP Fatal error:  Undefined class constant 'FETCH' in /home/mushmasters/public_html/assetMan/transfer.php on line 38
+[21-May-2017 05:31:16 UTC] PHP Notice:  Undefined index: user_session in /home/mushmasters/public_html/assetMan/header.php on line 17
+[21-May-2017 05:31:16 UTC] PHP Notice:  Undefined index: inQty in /home/mushmasters/public_html/assetMan/checkIn.php on line 14
+[21-May-2017 05:31:16 UTC] PHP Notice:  Undefined index: inID in /home/mushmasters/public_html/assetMan/checkIn.php on line 15
+[21-May-2017 05:31:16 UTC] PHP Notice:  Undefined index: inPo in /home/mushmasters/public_html/assetMan/checkIn.php on line 16
+[21-May-2017 06:08:16 UTC] PHP Notice:  Undefined index: user_session in /home/mushmasters/public_html/assetMan/header.php on line 17
+[21-May-2017 06:08:16 UTC] PHP Notice:  Undefined index: inQty in /home/mushmasters/public_html/assetMan/checkIn.php on line 14
+[21-May-2017 06:08:16 UTC] PHP Notice:  Undefined index: inID in /home/mushmasters/public_html/assetMan/checkIn.php on line 15
+[21-May-2017 06:08:16 UTC] PHP Notice:  Undefined index: inPo in /home/mushmasters/public_html/assetMan/checkIn.php on line 16
+[21-May-2017 06:08:44 UTC] PHP Notice:  Undefined index: user_session in /home/mushmasters/public_html/assetMan/header.php on line 17
+[21-May-2017 06:08:44 UTC] PHP Notice:  Undefined index: inQty in /home/mushmasters/public_html/assetMan/checkIn.php on line 14
+[21-May-2017 06:08:44 UTC] PHP Notice:  Undefined index: inID in /home/mushmasters/public_html/assetMan/checkIn.php on line 15
+[21-May-2017 06:08:44 UTC] PHP Notice:  Undefined index: inPo in /home/mushmasters/public_html/assetMan/checkIn.php on line 16
+[21-May-2017 06:08:50 UTC] PHP Notice:  Undefined index: user_session in /home/mushmasters/public_html/assetMan/header.php on line 17
+[21-May-2017 06:08:50 UTC] PHP Notice:  Undefined index: user_session in /home/mushmasters/public_html/assetMan/header.php on line 17
+[21-May-2017 06:08:50 UTC] PHP Notice:  Undefined index: user_session in /home/mushmasters/public_html/assetMan/header.php on line 17
+[21-May-2017 06:12:08 UTC] PHP Notice:  Undefined index: user_session in /home/mushmasters/public_html/assetMan/header.php on line 17
+[21-May-2017 06:12:08 UTC] PHP Notice:  Undefined index: inQty in /home/mushmasters/public_html/assetMan/checkIn.php on line 14
+[21-May-2017 06:12:08 UTC] PHP Notice:  Undefined index: inID in /home/mushmasters/public_html/assetMan/checkIn.php on line 15
+[21-May-2017 06:12:08 UTC] PHP Notice:  Undefined index: inPo in /home/mushmasters/public_html/assetMan/checkIn.php on line 16
+[21-May-2017 06:42:48 UTC] PHP Notice:  Undefined index: user_session in /home/mushmasters/public_html/assetMan/header.php on line 17
+[21-May-2017 06:42:48 UTC] PHP Notice:  Undefined index: inQty in /home/mushmasters/public_html/assetMan/checkIn.php on line 14
+[21-May-2017 06:42:48 UTC] PHP Notice:  Undefined index: inID in /home/mushmasters/public_html/assetMan/checkIn.php on line 15
+[21-May-2017 06:42:48 UTC] PHP Notice:  Undefined index: inPo in /home/mushmasters/public_html/assetMan/checkIn.php on line 16
+[21-May-2017 16:26:39 UTC] PHP Fatal error:  Undefined class constant 'FETCH' in /home/mushmasters/public_html/assetMan/transfer.php on line 38
+[21-May-2017 16:26:47 UTC] PHP Fatal error:  Undefined class constant 'FETCH' in /home/mushmasters/public_html/assetMan/transfer.php on line 38
+[21-May-2017 16:27:48 UTC] PHP Fatal error:  Undefined class constant 'FETCH' in /home/mushmasters/public_html/assetMan/transfer.php on line 38
+[21-May-2017 17:00:11 UTC] PHP Fatal error:  Undefined class constant 'FETCH' in /home/mushmasters/public_html/assetMan/transfer.php on line 38
+[21-May-2017 17:00:29 UTC] PHP Notice:  Undefined index: user_session in /home/mushmasters/public_html/assetMan/header.php on line 17
+[21-May-2017 17:00:29 UTC] PHP Notice:  Undefined index: transferDescID in /home/mushmasters/public_html/assetMan/transfer.php on line 4
+[21-May-2017 17:00:29 UTC] PHP Notice:  Undefined index: user_session in /home/mushmasters/public_html/assetMan/header.php on line 17
+[21-May-2017 17:00:29 UTC] PHP Fatal error:  Undefined class constant 'FETCH' in /home/mushmasters/public_html/assetMan/transfer.php on line 38
+[21-May-2017 17:37:18 UTC] PHP Notice:  Undefined index: user_session in /home/mushmasters/public_html/assetMan/header.php on line 17
+[21-May-2017 17:37:18 UTC] PHP Notice:  Undefined index: transferDescID in /home/mushmasters/public_html/assetMan/transfer.php on line 4
+[21-May-2017 17:37:18 UTC] PHP Notice:  Undefined index: user_session in /home/mushmasters/public_html/assetMan/header.php on line 17
+[21-May-2017 17:37:18 UTC] PHP Fatal error:  Undefined class constant 'FETCH' in /home/mushmasters/public_html/assetMan/transfer.php on line 38
+[21-May-2017 18:33:20 UTC] PHP Notice:  Undefined index: user_session in /home/mushmasters/public_html/assetMan/header.php on line 17
+[21-May-2017 18:33:20 UTC] PHP Notice:  Undefined index: inQty in /home/mushmasters/public_html/assetMan/checkIn.php on line 14
+[21-May-2017 18:33:20 UTC] PHP Notice:  Undefined index: inID in /home/mushmasters/public_html/assetMan/checkIn.php on line 15
+[21-May-2017 18:33:20 UTC] PHP Notice:  Undefined index: inPo in /home/mushmasters/public_html/assetMan/checkIn.php on line 16
+[23-May-2017 00:27:17 UTC] PHP Fatal error:  Undefined class constant 'FETCH' in /home/mushmasters/public_html/assetMan/transfer.php on line 38
+[23-May-2017 00:29:01 UTC] PHP Fatal error:  Undefined class constant 'FETCH' in /home/mushmasters/public_html/assetMan/transfer.php on line 39
+[23-May-2017 00:36:14 UTC] PHP Warning:  Unexpected character in input:  ' in /home/mushmasters/public_html/assetMan/transfer.php on line 29
+[23-May-2017 00:36:14 UTC] PHP Warning:  Unexpected character in input:  ' in /home/mushmasters/public_html/assetMan/transfer.php on line 29
+[23-May-2017 00:36:14 UTC] PHP Warning:  Unexpected character in input:  ' in /home/mushmasters/public_html/assetMan/transfer.php on line 29
+[23-May-2017 00:36:14 UTC] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/mushmasters/public_html/assetMan/transfer.php on line 29
+[23-May-2017 00:37:22 UTC] PHP Fatal error:  Undefined class constant 'FETCH' in /home/mushmasters/public_html/assetMan/transfer.php on line 38
+[23-May-2017 00:43:33 UTC] PHP Fatal error:  Undefined class constant 'FETCH' in /home/mushmasters/public_html/assetMan/transfer.php on line 38
+[23-May-2017 00:43:59 UTC] PHP Fatal error:  Undefined class constant 'FETCH' in /home/mushmasters/public_html/assetMan/transfer.php on line 30
+[23-May-2017 00:48:15 UTC] PHP Fatal error:  Undefined class constant 'FETCH' in /home/mushmasters/public_html/assetMan/transfer.php on line 30
+[23-May-2017 00:48:35 UTC] PHP Fatal error:  Undefined class constant 'FETCH' in /home/mushmasters/public_html/assetMan/transfer.php on line 30
+[23-May-2017 00:49:37 UTC] PHP Fatal error:  Undefined class constant 'FETCH' in /home/mushmasters/public_html/assetMan/transfer.php on line 30
+[23-May-2017 00:49:50 UTC] PHP Fatal error:  Undefined class constant 'FETCH' in /home/mushmasters/public_html/assetMan/transfer.php on line 30
+[23-May-2017 00:54:46 UTC] PHP Notice:  Undefined offset: 1 in /home/mushmasters/public_html/assetMan/transfer.php on line 40
+[23-May-2017 00:54:46 UTC] PHP Fatal error:  Call to undefined function initTable() in /home/mushmasters/public_html/assetMan/transfer.php on line 52
+[23-May-2017 01:00:07 UTC] PHP Notice:  Undefined offset: 1 in /home/mushmasters/public_html/assetMan/transfer.php on line 41
